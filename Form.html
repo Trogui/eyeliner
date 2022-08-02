@@ -52,8 +52,24 @@
 
                 var item = forms[randomIndex];
 
+                document.getElementById("p1").innerHTML = "La forma de tu eyeliner será  ";
                 
-                document.getElementById("p1").innerHTML = " La forma de tu eyeliner será  " + item;
+                setTimeout(function () {
+                    document.getElementById("p1").innerHTML = "La forma de tu eyeliner será." ;
+                }, 500);
+
+                setTimeout(function () {
+                    document.getElementById("p1").innerHTML = "La forma de tu eyeliner será.." ;
+                }, 1000);
+
+                setTimeout(function () {
+                    document.getElementById("p1").innerHTML = "La forma de tu eyeliner será..." ;
+                }, 1500);
+
+                setTimeout(function () {
+                    document.getElementById("p1").innerHTML = "La forma de tu eyeliner será  " + item;
+                }, 2000);
+                
 
             }
         </script>
