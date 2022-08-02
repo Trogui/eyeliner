@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#general{
+    height: 720px;
+}
+
+#divChangeButton {
+    background-color: #87255b;
+    font-size: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+}
+.changeButton {
+
+    width: 33.333333%;
+    border: 2px outset white;
+    height: 100%;
+    background-color: #b370b0;
+    color: #f2e9f1;
+    font-size: 90px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    
+}
+
+#indexBody {
+    height: 85%;
+    background-color:#bba0ca;
+    margin-top: 2px;
+    color: #f2e9f1;
+    font-size: 25px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    
+}
+#indexBody h1{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+#indexBody p {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+.changeButton:disabled {
+    background-color: #87255b;
+    color: #f2e9f1;;
+}
+
+
+.changeButton:hover:enabled {
+    background-color: #87255b;
+    color: #f2e9f1;;
+}
+
+
+#ColorSelector {
+    height: 150px;
+    width: 33.33333%;
+    margin-left: 33.3333%;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#FormSelector {
+    height: 150px;
+    width: 33.33333%;
+    margin-left: 33.3333%;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.selectorHeader{
+    font-size: 70px;
+}
+
+.pHeader {
+    font-size:50px;
+    text-align: center;
+}

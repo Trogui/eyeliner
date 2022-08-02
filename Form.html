@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> Eyeliner para mi reina </title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow" rel="stylesheet"> 
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+    
+</head>
+
+<body>
+    <div id = "general">
+
+    
+    <div id = "divChangeButton">
+        <button class="changeButton" id="FormButton" disabled> Forma </button>
+        <button class="changeButton" id="IndexButton"> Inicio </button>
+        <button class="changeButton" id="ColorButton"> Color </button>
+
+        <script>
+            document.getElementById("FormButton").onclick = function () {
+                location.href = "Form.html";
+            };
+            
+            document.getElementById("IndexButton").onclick = function () {
+                location.href = "index.html";
+            };
+            
+            document.getElementById("ColorButton").onclick = function () {
+                location.href = "Color.html";
+            };
+        </script>
+
+    </div>
+    <div id = "indexBody">
+        <br>
+        <h1 class="selectorHeader">Selector de Forma</h1>
+        
+            
+          
+        <button id="FormSelector" class="changeButton"> PRESS ME!</button>
+
+        <script>
+            const forms = ["Simple","Doble","E girl","Purpurina","Brillito","Lower Lash"];
+
+            document.getElementById("FormSelector").onclick = function (){
+
+                const randomIndex = Math.floor(Math.random() * forms.length);
+
+                var item = forms[randomIndex];
+
+                
+                document.getElementById("p1").innerHTML = " La forma de tu eyeliner será  " + item;
+
+            }
+        </script>
+        
+        <h2 id="p1" class="pHeader">La forma de tu eyeliner está por determinar</h2>
+
+    </div>
+</div>
+</body>
+
+</html>
